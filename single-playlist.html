@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Single Playlist Screen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="major-project-1.css">
+	<link rel="stylesheet" type="text/css" href="single-playlist.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<div class="nav-bar">
+		<div class="navigation-brand-link">
+			<div class="img-container">
+				<img id="brand-img" src="music-player.png">
+				<span class="brand-name">Ninjas <br><h3>Studio</h3></span>
+			</div>
+			<div class="nav-link">
+				<a id="favourites" href="#">Favourites</a>
+			</div>
+		</div>
+		<!-- Search and userphoto div -->
+		<div class="search-login">
+				
+				<div id="searchbar">
+					<form>
+
+					<div class="search-icon bg-color-blue"><i class="fas fa-search" id="icon" height="20px"></i></div>
+					<input type="text" name="search" placeholder="Search" class="bg-color-blue" id="search-input">
+					<div class="search-icon bg-color-blue" id="mic-icon"><i class="fas fa-microphone"></i></div>
+				</form>
+				</div>
+			
+			<div class="notification-bell">
+				<i class="fas fa-bell"></i>
+			</div>
+			<div id="user-container">
+				<img id="user-image" src="tie.jpg">
+			</div>
+
+		</div>
+		<!-- for meduim screen <=768px-->
+		 <div class="ms-768">		
+			<div id="searchbar">
+					<form>
+					<div class="search-icon bg-color-blue"><i class="fas fa-search" id="icon" height="20px"></i></div>
+					<input type="text" name="search" placeholder="Search" class="bg-color-blue" id="search-input">
+					<div class="search-icon bg-color-blue" id="mic-icon"><i class="fas fa-microphone"></i></div>
+					</form>
+				<div class="notification-bell">
+				<i class="fas fa-bell"></i>
+				</div>
+				<div id="user-container">
+					<img id="user-image" src="tie.jpg">
+				</div>	
+			</div>
+		</div>
+		<!-- For small screen <=576px -->
+		<div id="hamburger-container">
+
+			<div id="hamburger-icon">
+				<a href="#collapse">
+				<i class="fas fa-music"></i>
+			</a>
+			</div>
+			<div id="collapse" class="bg-color-blue">
+				<form>
+				<ul>
+					<li>
+						<div class="search-icon bg-color-blue" id="search-ms"><i class="fas fa-search"id="search-icon" height="20px"></i></div><input id="search-ms-input" type="text" name="text" placeholder="Search"						 class="search-input-sm bg-color-blue">
+						<div class="search-icon bg-color-blue mic-sm" id="mic-icon"><i class="fas fa-microphone mic-input-icon" ></i></div>
+					</li>
+					<li>
+						<div  class="bg-color-blue notification-profile-close">
+							Notifications<a href="#"> <i class="fas fa-bell"> </i></a>
+
+						</div>
+					</li>
+					<li>
+						<div id="Profile" class="bg-color-blue notification-profile-close">
+							Profile<a href="#"><img id="user-image" src="tie.jpg"></a>
+						</div>
+					</li>
+					<li>
+						<div id="close-link" >
+						Close
+						<a href="#"><i class="fas fa-window-close"></i></a>
+					</div>
+					</li>
+				</ul>
+			</form>
+			</div>
+		</div>
+	</div>
+	<!-- Main container -->
+	<main id="main">
+		<div id="band-information" class="w-100 bg-color-blue">
+			<div id="band-photo">
+			</div>
+			<div id="band-details" >
+				<div  class="w-100 band-details-header">
+					<p class="heading band-name">Mettalica<br>
+					<span class="lightgrey">American Band</span></p>
+					<div class="lightgrey">
+						952 Followers
+					</div>
+				</div>
+				<div id="band-para" class="lightgrey">
+					Metallica is an American heavy metal band. The band was formed in 1981 in Los Angeles by vocalist/guitarist James Hetfield and drummer Lars Ulrich, and has been based in San Francisco for most of its career. The band's fast tempos, instrumentals and aggressive musicianship made them one of the founding "big four" bands of thrash metal, alongside Megadeth, Anthrax and Slayer.
+				</div>
+				<div id="follow-div">
+					<Div><button type="button">Play All</button><br><P id="album">
+					200 Tracks | 120 Albums</P></Div>
+					<div id="follow" class="lightgrey">Follow</div>
+				</div>
+			</div>
+		</div>
+		<div class="w-100" id="band-songs">
+			<div class="queue-songs-template w-100 light-blue p-l">
+				<div class="queue-song-img">
+					<div class="numbering">01</div> 
+					<Div class="queue-template-img play-icon"><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Mirage<br><span>Else</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart">
+					</i><div class="plus-icon"><i class="fas fa-plus"></i></div></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100 light-blue mt p-l">
+				<div class="queue-song-img">
+					<div class="numbering">02</div> 
+					<Div class="queue-template-img second play-icon"><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Bow Down To<br><span>Imagine Dragons</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i><div class="plus-icon"><i class="fas fa-plus"></i></div></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100 light-blue mt p-l">
+				<div class="queue-song-img">
+					<div class="numbering">02</div> 
+					<Div class="queue-template-img third play-icon" ><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name" ><p>Enter Sandman<br><span>Mettalica</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i><div class="plus-icon"><i class="fas fa-plus"></i></div></div>
+				</div>
+
+			</div>
+			<div class="queue-songs-template w-100 light-blue mt p-l">
+				<div class="queue-song-img">
+					<div class="numbering">03</div> 
+					<Div class="queue-template-img fourth play-icon" ><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Rapgod<br><span>Eminem</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i><div class="plus-icon"><i class="fas fa-plus"></i></div></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100 light-blue mt p-l">
+				<div class="queue-song-img">
+					<div class="numbering blue"><i class="fas fa-volume-up"></i></div> 
+					<Div class="queue-template-img play-icon"><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Mirage<br><span>Else</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i><div class="plus-icon"><i class="fas fa-plus"></i></div></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100 light-blue mt p-l">
+				<div class="queue-song-img">
+					<div class="numbering">02</div> 
+					<Div class="queue-template-img second play-icon"><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Bow Down To<br><span>Imagine Dragons</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i><div class="plus-icon"><i class="fas fa-plus"></i></div></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100 light-blue mt p-l">
+				<div class="queue-song-img">
+					<div class="numbering">03</div> 
+					<Div class="queue-template-img fourth play-icon" ><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Rapgod<br><span>Eminem</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i><div class="plus-icon"><i class="fas fa-plus"></i></div></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100 light-blue mt p-l">
+				<div class="queue-song-img">
+					<div class="numbering">03</div> 
+					<Div class="queue-template-img fourth play-icon" ><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Rapgod<br><span>Eminem</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i><div class="plus-icon"><i class="fas fa-plus"></i></div></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100 light-blue mt p-l">
+				<div class="queue-song-img">
+					<div class="numbering">02</div> 
+					<Div class="queue-template-img second play-icon"><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Bow Down To<br><span>Imagine Dragons</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i><div class="plus-icon"><i class="fas fa-plus"></i></div></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100 light-blue mt p-l">
+				<div class="queue-song-img">
+					<div class="numbering">02</div> 
+					<Div class="queue-template-img third play-icon" ><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name" ><p>Enter Sandman<br><span>Mettalica</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i><div class="plus-icon"><i class="fas fa-plus"></i></div></div>
+				</div>
+
+			</div>
+
+		</div>
+	</main>
+	<!-- Similar artist section -->
+	<div id="similar-artist">
+		<div class="band-details-header">
+			<p class="heading band-name">Similar Artists</p>
+			<div class="lightgrey" id="viewall">View All</div>
+		</div>
+		<div id="similar-artist-container w-100">
+			<div class="similar-artist-template w-100">
+				<div class="similar-artist-img"></div>
+				<div class="similar-artist-content">
+					<div class="similar-artist-name ml">
+						<P>Imagine Dragons<br><p class="lightgrey artist-description">
+							Pop Band
+						</p></P>
+					</div>
+					<div class="three-dots-duration">
+						<div class="lightgrey"><i class="fas fa-ellipsis-h dots"></i></div>
+						<div class="lightgrey duration" >4:44</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="similar-artist-template w-100 mt">
+				<div class="similar-artist-img"></div>
+				<div class="similar-artist-content">
+					<div class="similar-artist-name ml">
+						<P>Imagine Dragons<br><p class="lightgrey artist-description">
+							Pop Band
+						</p></P>
+					</div>
+					<div class="three-dots-duration">
+						<div class="lightgrey"><i class="fas fa-ellipsis-h dots"></i></div>
+						<div class="lightgrey duration" >4:44</div>
+					</div>
+				</div>
+		</div>
+		<div class="similar-artist-template w-100 mt">
+				<div class="similar-artist-img"></div>
+				<div class="similar-artist-content">
+					<div class="similar-artist-name ml">
+						<P>Imagine Dragons<br><p class="lightgrey artist-description">
+							Pop Band
+						</p></P>
+					</div>
+					<div class="three-dots-duration">
+						<div class="lightgrey"><i class="fas fa-ellipsis-h dots"></i></div>
+						<div class="lightgrey duration" >4:44</div>
+					</div>
+				</div>
+			</div>
+	<div id="side-queue">
+		<div class="heading side-queue-heading w-100">
+			<div><p id="recently-played">Recently Played</p></div>
+			<div id="queue-drop-down">
+			View All
+			</div>
+			<div id="playlist-drop-down">
+				<div id="playlists" class="w-100 padding border-btm">
+					<span>Playlists</span>
+				</div>
+				<div class="w-100 padding">
+					<span>Favourite Songs</span>
+				</div>
+			</div>
+		</div>
+		<div id="queue-songs" class="w-100">
+			<div class="queue-songs-template w-100">
+				<div class="queue-song-img">
+					<div class="numbering">01</div> 
+					<Div class="queue-template-img play-icon"><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Mirage<br><span>Else</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100">
+				<div class="queue-song-img">
+					<div class="numbering">02</div> 
+					<Div class="queue-template-img second play-icon"><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Bow Down To<br><span>Imagine Dragons</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100">
+				<div class="queue-song-img">
+					<div class="numbering">02</div> 
+					<Div class="queue-template-img third play-icon" ><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name" ><p>Enter Sandman<br><span>Mettalica</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100">
+				<div class="queue-song-img">
+					<div class="numbering">03</div> 
+					<Div class="queue-template-img fourth play-icon" ><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Rapgod<br><span>Eminem</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100">
+				<div class="queue-song-img">
+					<div class="numbering blue"><i class="fas fa-volume-up"></i></div> 
+					<Div class="queue-template-img play-icon"><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Mirage<br><span>Else</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100">
+				<div class="queue-song-img">
+					<div class="numbering">06</div> 
+					<Div class="queue-template-img third play-icon" ><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name" ><p>Enter Sandman<br><span>Mettalica</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100">
+				<div class="queue-song-img">
+					<div class="numbering">07</div> 
+					<Div class="queue-template-img second play-icon"><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Bow Down To<br><span>Imagine Dragons</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100">
+				<div class="queue-song-img">
+					<div class="numbering">03</div> 
+					<Div class="queue-template-img fourth play-icon" ><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Rapgod<br><span>Eminem</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+			<div class="queue-songs-template w-100">
+				<div class="queue-song-img">
+					<div class="numbering">07</div> 
+					<Div class="queue-template-img play-icon"><i class="fas fa-play"></i></Div>
+				</div>
+				<div class="que-song-details">
+					<div class="song-name"><p>Mirage<br><span>Else</span></p></div>
+					<div class="heart-icon"><i class="far fa-heart"></i></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- Bottom music player -->
+	<div id="music-player-onclick" class="w-100">
+	<div id="parent-music-player">
+		<div id="song-information">
+			<div id="song-information-img"></div>
+			<div id="song-information-details">
+				<div id="song-name-detail">
+					I'm gonna do my thing<br>
+					<p>The Royal Deluxe</p>
+				</div>
+				<div id="heart-report">
+					<i class="far fa-heart"></i>
+					<i class="fas fa-ban"></i>
+				</div>
+			</div>
+		</div>
+		<div id="song-player">
+			<div id="controls">
+				<div class="mt blue"><i class="fas fa-random"></i></div>
+				<div class="mt"><i class="fas fa-caret-square-left"></i></div>
+				<div id="pause"><i class="far fa-pause-circle"></i></div>
+				<div class="mt"><i class="fas fa-caret-square-right"></i></div>
+				<div class="mt blue"><i class="fas fa-th-list"></i></div>
+			</div>
+			<div id="slider" class="w-100">
+				<p>3:20</p>
+				<input type="range" name="range">
+				<p>5:00</p>
+			</div>
+		</div>
+		<div id="volume-controls">
+			<div><i class="fas fa-headphones"></i></div>
+			<div id="desktop-icon"><i class="fas fa-desktop"></i></div>
+			<div id="volume-up"><i class="fas fa-volume-up"></i></div>
+			<div id="range"><input type="range" name=""></div>
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

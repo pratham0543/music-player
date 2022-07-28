@@ -1,0 +1,1047 @@
+body{
+	background-color: #0C1027;
+	font-family: sans-serif;
+	color: white;
+}
+/*Navbar*/
+.nav-bar{
+	width:100%;
+	box-sizing: border-box;
+	display:flex;
+	justify-content: space-between;
+	font-family:monospace;
+	color:white;
+}
+.navigation-brand-link{
+	display:flex;
+	justify-content: space-between;
+}
+.navigation-brand-link #brand-img{
+	height:50px;
+	width:50px;
+	float: left;
+}
+.brand-name{
+	float: right;
+	margin-left: 12px;
+	margin-top:12px;
+}
+.brand-name h3{
+	letter-spacing: 1px;
+	margin-top:0px;
+}
+.nav-link{
+	margin-top:12px;
+	margin-left:80px;
+	padding-top:10px;
+	font-size:15px;
+}
+.nav-link a{
+	text-decoration:none;
+	color:white;
+	font-family:sans-serif;
+}
+
+/*Search, userphoto and notification bell section*/
+/*ms means medium screen and sm means small screen*/
+.search-login{
+	margin-top:20px;
+	display:flex;
+	justify-content:space-between;
+	height:auto;
+	width:410px;
+}
+.search-icon{
+	display:inline-block;
+	height:28px;
+	width:25px;
+	padding-top:10px;
+	padding-left:12px;
+	border:none;
+	border-radius: 10px 0px 0px 10px;
+	margin-right:-8px;
+}
+#search-input{
+	font-family:sans-serif;
+}
+#search-input:focus{
+	outline:none;
+	color:white;
+}
+#mic-icon{
+	margin-left:-8px;
+	border-radius: 0px 10px 10px 0px;
+}
+.bg-color-blue{
+	background-color: #12193E;
+}
+#search-input{
+	border:none;
+	height:35px;
+}
+.notification-bell{
+	margin-top:10px;
+	
+}
+#user-container{	
+	height: 40px;
+	width:40px;
+	margin-right:25px;
+}
+#user-image{
+	height:100%;
+	width:100%;
+	margin-bottom: -12px;
+	border-radius: 50%;
+}
+.ms-768{
+	display:none;
+}
+
+/*Hamburger-icon*/
+#hamburger-container{
+	display:none;
+	font-size: 12px;
+}
+#hamburger-icon{
+		margin-top:15px;
+		margin-right: 30px;
+		font-size: 20px;
+}
+#hamburger-icon a{
+	text-decoration:none;
+	color:white;
+}
+
+/*Collapse component*/
+#collapse{	
+	background-color: black;
+	position: absolute;
+	top:60px;
+	right:30px;
+	width:200px;
+	display: none;
+	z-index: 3;
+}
+#collapse:target{
+	display: initial;
+}
+#collapse ul{
+	list-style: none;
+	padding-left: 10px;
+}
+#collapse ul li{
+	padding: 10px
+}
+
+
+/*ms means medium screen and sm means small screen
+/*Search bar styling for ms*/
+#search-ms{
+	display:inline-block;
+	height:24px;
+	width:21px;
+	border:none;
+	font-size:12px;
+	margin-right: -2px;
+	padding:0px;
+	position: relative;
+	border:none;
+	border-radius:5px 0px 0px 5px;	
+}
+.search-input-sm{
+	height:22px;
+	width: 110px;
+	border:none;
+}
+#search-ms-input:focus{
+	outline:none;
+	color:white;
+	font-family:sans-serif;
+}
+#search-icon{
+	padding:6px 3px 1px 6px;
+}
+
+/*Voice search styling*/
+.mic-input-icon{
+	padding:6px 3px 1px 6px;
+
+}
+.mic-sm{
+	padding: 0px;
+	font-size:12px;
+	height:24px;
+	position: relative;
+	right:3px;
+	border-radius:0px 5px 5px 0px !important;
+}
+
+/*Notification bell styling for ms*/
+.notification-profile-close{
+	padding: 12px 10px;
+	width:80%;
+}
+.notification-profile-close a{
+	text-decoration: none;
+	color:white;
+	font-size:15px;
+	margin-left: 25px
+}
+
+/*Profile styling for ms*/
+.notification-profile-close{
+	padding: 12px 10px;
+	width:80%;
+
+}
+.notification-profile-close a{
+	text-decoration: none;
+	color:white;
+	font-size:15px;
+	margin-left: 25px
+}
+
+#Profile img{
+	height:35px;
+	width:35px;
+	margin-left: 25px;
+}
+
+/*Close link styling*/
+#close-link{
+	text-align: center;
+	font-size:17px;
+}
+#close-link i{
+	font-size:20px;
+	color:red;
+	padding: 10px;
+	position: relative;
+	top:3px;
+	left:-10px;
+}
+
+
+/*Main component*/
+#main{
+	margin-left:50px;
+	margin-top:64px;
+	width:55%;
+	color:white;
+	font-family: sans-serif;
+	display:inline-block;
+
+}
+/*Class for all div elements inside main to have full parent width*/
+.w-100{
+	width:100%;
+}
+
+
+#band-container{
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.main-band-image{
+	background-position: center center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	
+	transition: 0.5s ease;
+	height:15vw;
+	width:15vw;
+	/*margin-right:-10px;*/
+}
+#skillet-band{
+	background-image: url("skillet.jpg")
+}
+#the-score{
+	background-image: url("mettalica.jpg");
+}
+#imagindragons{
+	background-image: url("imagindragons1.jpg");
+}
+/*img transition*/
+.main-band-image:hover{
+	height: 16vw;
+	width: 16vw;
+	box-shadow:1px 0px 23px 10px rgba(50, 50, 50, 0.67);
+	z-index: 3;
+	
+}
+
+/*LAtest release section*/
+#latest-release-container{
+	width:100%;
+	 
+}
+.heading{
+	font-size:15px;
+	font-weight: bold;
+}
+
+#songs{
+	display:flex;
+	flex-wrap: wrap;
+}
+.songs-template{
+	width:45%;
+	display: flex;
+
+}
+.singer{
+	margin-top:5px;
+	font-size: 12px;
+}
+.song-img{
+	background-image: url(song.png);
+	background-size: cover;
+	height:5vw;
+	width: 5vw;
+	background-position:center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:black;
+	margin-bottom:12px;
+}
+.song-img a{
+	color:inherit;
+}	
+
+
+/*animations on song img*/
+.song-img div{
+	visibility: hidden;
+
+}
+.song-img:hover > div{
+	visibility: visible;
+	opacity: 1; 
+}
+
+
+
+.img-content{
+	width: 65%;
+	height:100%;
+	padding-left:10px; 
+	font-family:sans-serif;
+	position: relative;
+
+}
+/*songs-information and functions*/
+#dots-click-function{
+	background-color: white;
+	
+	width: 9vw;
+	display: none;
+	position: absolute;
+	right:28px;
+	top: 16px;
+	color: #989a9b;
+	z-index: 3;
+	padding: 12px;
+	font-weight: bold;
+	font-size: 10px;
+}
+#dots-click-function:target{
+	display:block;
+	
+
+}
+#dots-click-function span{
+	color: black;
+	font-size: 11px;
+	margin-left: 10px;
+}
+.border-btm{
+	border-bottom:1px solid #989a9b;
+}
+.padding{
+	padding-bottom: 10px;
+	padding-top:8px;
+}
+
+
+#get-info{
+	padding-top: 10px;
+}
+#play-now{
+	padding-top:5px; 
+}
+
+
+
+.img-content .dots{
+	color: #989a9b;
+	position: relative;
+}
+.img-content span{
+	font-size: 10px;
+	left: 84%;
+	top:13%;
+}
+.img-content i{
+	left:75%;
+}
+.release-date{
+	font-size: 12px;
+	margin-top:-10px;
+	color:#d3d2d2;
+}
+/*artist section*/
+#artist-section{
+	display: flex;
+	flex-direction:column;
+
+}
+
+#artist-container{
+	display: flex;
+	justify-content: space-between;
+
+}
+.artist-image{
+	background-size: cover;
+	background-position: center;
+	height:6vw;
+	width:6vw;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	border-radius: 50%;
+	margin-right:35px;
+	
+}
+
+.artist-image i{
+	visibility: hidden;
+}
+.artist-image:hover i{
+	visibility: visible;
+}
+#artist1{
+	background-image: url('edsheeran.jpg');
+}
+#artist2{
+	background-image: url('coldplay.jpg');
+}
+#artist3{
+	background-image: url('zayn.jpg');
+}
+#artist4{
+	background-image: url('charlieputh.jpg');
+}
+#artist5{
+	background-image: url('brunomars.jpg');
+}
+#artist6{
+	background-image: url('mettalica.jpg');
+}
+#artist6 a{
+
+	color:white;
+}
+
+#artist-name{
+	display: flex;
+	justify-content: space-around;
+	font-size:13px;
+	margin-left:-32px;
+}
+
+
+/*classification section*/
+#classifications{
+	display: flex;
+	justify-content: space-between;
+	background-color: #101642;
+	padding-top:10px;  
+
+}
+.classification-content{
+	border-radius: 50%;
+	height: 6vw;
+	width: 6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.classification-content:before{
+	content: " ";
+	display: block;
+   position: absolute;
+    height:5vw;
+    width: 5vw;
+    border-radius: 50%;
+    background-position: center;
+	background-size: cover;
+	opacity: 0.7;
+	z-index: 1;
+}
+.classification-content p{
+	font-size: 15px;
+	position:relative;
+	z-index: 2;
+	
+}
+
+#radio:before{
+	background-image: url("radio.jpg");
+}
+#Love:before{
+	background-image: url("love.jpg")
+}
+#jazz:before{
+	background-image: url("jazz.jpg");
+}
+#rock:before{
+	background-image:url("rock.jpg");
+}
+#workout:before{
+	background-image: url("workout.jpg")
+}
+#pop:before{
+	background-image: url("pop.jpg")
+}
+#chill:before{
+	background-image: url("chill.jpg");
+}
+
+/*Genre section*/
+#Genre{
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.genre-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 17vw;
+	height:8vw;
+	background-position: center;
+	background-size:100% 120%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	transition:all 1s ease;
+
+}
+
+
+
+.genre-content p{
+	box-shadow: 1px 1px 14px 0px rgba(50, 50, 50, 0.82);
+}
+
+#party{
+	background-image: url("party.jpg"); 
+}
+.genre-content:hover{
+	background-size:150% 170%;
+	filter: blur(0.4px);
+}
+
+#electronic{
+	background-image: url("electronic.jpg"); 
+}
+#road-trip{
+	background-image: url("roadtrip.jpg");
+}
+
+#latest-english{
+	display: flex;
+	flex-direction: column;
+}
+#latest-english-container{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.latest-songs{
+	display: flex;
+	flex-direction: column;
+
+}
+.latest-songs-img{
+	background-image: url("skillet.jpg");
+	background-position: center;
+	background-size: cover;
+	height:7vw;
+	width: 8vw; 
+}
+
+.latest-songs p{
+	font-size: 13px;
+}
+.latest-songs p span{
+	font-size: 14px;
+	color:#989a9b;
+}
+#english-img-6{
+	background-image: url("mettalica.jpg");
+}
+#english-img-4{
+	background-image: url(mettalica.jpg);
+}
+#english-img-2{
+	background-image: url("electronic.jpg")
+}
+#music-player-onclick{
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	z-index:3;
+	height:55px;
+	background-color: #282828;
+	width: 100%;
+	padding:10px 5px;
+
+}
+#music-player-onclick:target{
+	display: initial;
+}
+
+#parent-music-player{
+	margin-left: auto;
+	margin-right: auto;
+	height:100%;
+	width:90%;
+	display: flex;
+	justify-content: space-between; 
+}
+#song-information{
+	display: flex;
+	width:17vw;
+}
+#song-information-img{
+	background-image: url(chill.jpg);
+	height:4vw;
+	width: 4vw;
+	background-position: center;
+	background-size: cover;
+}
+#song-information-details{
+	display: flex;
+	
+}
+#song-name-detail{
+	font-size: 12px;
+	align-self: center;
+	width:10vw; 
+}
+#song-name-detail p{
+	color:#989a9b;
+	font-size: 10px;
+	margin-top: 9px;
+}
+#heart-report{
+	margin-top:5px;	
+}
+#song-player{
+	width:35vw; 
+	height:100%;
+}
+#controls{
+	display: flex;
+	justify-content: space-between;
+	width:60%;
+	height:50%;
+	margin-left: auto;
+	margin-right: auto; 
+	
+}
+#pause{
+	font-size: 25px;
+}
+.mt{
+	margin-top:5px;
+}
+#slider{
+	height: 50%;
+
+	font-size: 12px;
+}
+#slider input{
+	width: 85%;
+
+}
+
+#slider p{
+	display: inline-block;
+	
+}
+#volume-controls{
+	width:25vw;
+	height: 100%;
+	
+}
+#volume-controls div{
+	display: inline-block;
+	position: relative;
+	top:20px;
+	font-size: 12px;
+	}
+#desktop-icon{
+	left: 8px;
+}
+#volume-up{
+	left:16px;
+}
+#range{
+	left:28px;
+}
+#range input{
+	width: 70%;
+	height: 8px;
+}
+
+#side-queue{
+	display: inline-block;
+	width:25%;
+	height:650px;
+	vertical-align: top;
+	margin-top:50px;
+	margin-left:80px;
+	overflow: scroll; 
+}
+#side-queue::-webkit-scrollbar{
+	width: 0;
+}
+.side-queue-heading{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+
+}
+.side-queue-heading p{
+	font-size: 20px;
+	margin-top:0px;
+}
+.side-queue-heading #queue-drop-down{
+	color:#4AD1B5;
+
+}
+.side-queue-heading a{
+	text-decoration: none;
+	color:inherit;
+	margin-left:10px;
+}
+/*Side queue panel*/
+#queue-songs{
+	margin-top: 25px;
+}
+.queue-songs-template{
+	display: flex;
+}
+.queue-song-img{
+	width: 20%;
+	display: flex;
+	color:#989a9b;
+	font-size: 12px;
+}
+.queue-template-img{
+	height:3vw;
+	width:3vw;
+	background-image: url(song.png);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.numbering{
+	align-self: center;
+	padding-right:10px;
+}
+.que-song-details{
+	display: flex;
+	width:80%;
+	justify-content: space-between;
+	margin-left: 10px;
+}
+.heart-icon{
+	margin-right: 35px;
+	align-self:  center;
+}
+
+
+.song-name{
+	font-size: 15px;
+
+}
+.song-name span{
+	font-size: 12px;
+	color:#989a9b;
+	font-weight: normal;
+}
+.song-name p{
+	margin-top:5px;
+	
+}
+.second{
+	background-image: url("rock.jpg");
+}
+.third{
+	background-image: url("mettalica.jpg");
+}
+.fourth{
+	background-image:url("radio.jpg");
+}
+.blue{
+	color:#21B7D8;
+}
+.play-icon i{
+	color:white;
+	display: none;
+}
+.play-icon:hover  i{
+	display: initial;
+}
+/*Playlist drp down menu on clicking of queue icon*/
+#playlist-drop-down{
+	position: absolute;
+	width:10vw;
+	display: none;
+	background-color: white;
+	z-index: 100;
+	top: 22px;
+    right: 30px;
+    padding: 12px;
+    color: black;
+    font-weight: bold;
+    font-size: 12px; 
+    display: none;
+}
+#playlist-drop-down:target{
+	display: block;
+}
+
+/*Media queries*/
+/*Breakpoints are 768px,640px and 576px*/
+@media screen and (max-width: 768px){
+		.nav-bar{
+			justify-content: space-between;
+		}
+		.search-login{
+			display:none;
+		}
+		.nav-link{
+			margin-left: 50px;
+			}
+		.ms-768{
+			display:initial;
+			margin-top:12px;
+			margin-right: 10px;
+		}
+		#searchbar{
+		display: flex;
+		justify-content: space-between;
+		}
+		.notification-bell{
+			margin-left:25px;
+		}
+		#user-container{
+			margin-left:25px;
+
+		}
+		#main{
+			margin-left:30px;
+		}
+
+		#latest-release-container{
+			width:100%;
+		}
+		.singer{
+			font-size: 12px;
+			margin-top:-2px;
+		}
+		.img-content span{
+			font-size: 9px;
+			left:68%;
+		}
+		.release-date{
+			font-size: 10px;
+		}
+		.img-content i{
+			left:57%; 
+		}
+		.artist-image{
+			height:8vw;
+			width:8vw;
+			border-radius: 46%;
+		}
+		.song-img{
+			height:7vw;
+			width: 6vw;
+			font-size: 12px;
+		}
+		#artist-name{
+			margin-left: -8px;
+			font-size:12px;
+		}
+		.classification-content p{
+			font-size: 12px;
+		}
+		.genre-content p{
+			font-size: 12px;
+		}
+	.latest-songs p{
+		font-size: 8px;
+	}
+	.latest-songs p span{
+		font-size: 9px; 
+	}
+	#side-queue{
+		margin-left:40px;
+		width: 33%;
+		height: 500px;
+	}
+	.song-name p{
+		font-size: 12px;
+
+	}
+	.song-name span{
+		font-size: 10px;
+	}
+	.heart-icon{
+		font-size: 12px;
+	}
+	.numbering{
+		font-size:10px;
+	}
+	.play-icon i{
+		font-size: 10px;
+	}
+	.side-queue-heading p{
+		font-size: 17px;
+	}
+	.side-queue-heading #queue-drop-down{
+		font-size: 10px;
+	}
+	.queue-template-img {
+		height: 4vw;
+		width: 4vw;
+	}
+	#parent-music-player{
+		width: 95%;
+	}
+	#controls #pause{
+		font-size: 20px;
+	}
+	#controls div{
+		font-size: 12px;
+	}
+	#volume-controls div{
+		font-size: 12px;
+	}
+	#slider input{
+    width: 77%;
+	}
+	#song-information {
+    width: 19vw;
+	}
+	#heart-report i{
+		font-size: 12px;
+    
+	}
+	#song-name-detail {
+    font-size: 10px;
+	}
+	#dots-click-function{
+	 font-size:7px;
+	}
+
+}
+
+		
+@media screen and (max-width:640px){
+	#searchbar{
+		display:none;
+	}
+	.search-login{
+		display: none;
+	}
+	#hamburger-container{
+		display: initial;
+	}
+	#main{
+			margin-left:30px;
+		}
+	.classification-content p{
+		font-size: 10px;
+	}
+	#side-queue{
+		margin-left:20px;
+		height: 450px;
+	}
+	#slider input {
+    width: 70%;
+}
+#range input {
+    width: 65%;
+    }
+
+}
+@media screen and (max-width: 576px){
+	.nav-bar{
+			justify-content: space-between;
+		}
+	.ms-768{
+		display:none;
+	}
+	.release-date{
+		font-size:7px;
+	}
+	.singer{
+		margin-top:-7px;
+		font-size: 10px;
+	}
+	.song-img{
+		font-size: 10px;
+	}
+	#artist-name{
+		font-size: 10px;
+	}
+	.artist-image{
+		margin-right: 12px;
+		width: 7vw; 
+	}
+	#main{
+			margin-left:0px;
+		}
+	.classification-content p{
+		font-size: 8px;
+	}
+	#side-queue{
+		width: 40%;
+		margin-left: 10px;
+	}
+	.song-name p{
+		font-size: 9px;
+
+	}
+	.song-name span{
+		font-size: 8px;
+	}
+	.numbering{
+		font-size: 8px;
+	}
+	.heart-icon{
+		font-size: 8px;
+	}
+	.play-icon i{
+		font-size: 8px;
+	}
+	#dots-click-function span {
+    font-size: 8px;
+	}
+
+
+}

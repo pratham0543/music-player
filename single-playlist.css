@@ -1,0 +1,151 @@
+/*Band-information*/
+#band-information{
+	display: flex;
+	width: 101%;
+}
+#band-photo{
+ background-image: url("mettalica.jpg");
+ background-size: cover;
+ background-position: center;
+ height:24vw;
+ width: 20vw;
+}
+#band-details{
+	padding-top:38px;
+	padding-bottom:38px;
+	padding-left:12px; 
+	width: 33vw;
+	font-size: 12px;
+}
+.band-name{
+	font-size: 25px;
+	margin-top: 0px;
+}
+
+#band-name span{
+	font-size: 13px;
+}
+.lightgrey{
+	color:#A2A5B4;
+}
+.band-details-header{
+	display: flex;
+	justify-content: space-between;
+}
+#band-para{
+	margin-top: -15px;
+
+}
+#follow-div{
+	width: 20vw;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+#follow-div button{
+	width:9vw;
+	padding:10px 20px;
+	color: white;
+	background-color: black;
+	border:none;
+	outline: none; 
+
+}
+#follow{
+	margin-top:8px;
+	font-size: 13px;
+	font-weight: bold;
+}
+#album{
+	font-size: 10px;
+	text-align: center;
+}
+#band-songs{
+	margin-top:10px;
+}
+.light-blue{
+	background-color: #1A1E33;
+}
+
+.queue-song-img{
+	width:5vw;
+
+}
+.queue-template-img{
+	margin-top: 11px;
+}
+.que-song-details{
+	margin-top:7px;
+	width:48vw;
+}
+.heart-icon{
+	display: inline-block;
+}
+.plus-icon{
+	margin-left:27px;
+	display: inline-block;
+}
+.mt{
+	margin-top:10px;
+}
+.p-l{
+	padding-left:8px;
+}
+#music-player-onclick{
+	display: block;
+}
+
+/*Similar artist*/
+#similar-artist{
+	display: inline-block;
+	vertical-align: top;
+	margin-top:70px;
+	margin-left: 20px;
+	width:30vw;
+}
+#viewall{
+	font-size:12px;
+}
+.similar-artist-img{
+	background-image: url("jazz.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 6vw;
+	width: 6vw;
+}
+.similar-artist-template{
+	display: flex;
+	font-size: 15px;
+}
+.similar-artist-template .artist-description{
+	font-size: 12px;
+}
+.ml{
+	margin-left:12px;
+}
+.similar-artist-content{
+	display: flex;
+	justify-content: space-between;
+	width: 22vw;
+}
+.three-dots-duration .duration{
+	font-size: 10px;
+	margin-top: 5px;
+	
+}
+/*Some css to side queue for single-playlist.html*/
+#side-queue{
+	margin-top:70px;
+	margin-left:12px;
+	width:100%;
+	height: auto;
+}
+.side-queue-heading #queue-drop-down{
+	color:#A2A5B4;
+}
+#recently-played{
+	font-size: 25px;
+}
+#queue-drop-down{
+	font-size: 12px;
+}
